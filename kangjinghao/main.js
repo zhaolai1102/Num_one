@@ -32,3 +32,4 @@ console.log("用"+spa+"连接数组的结果："+use['trans'](arr,spa));
 // var sto = httpGet.js;
 // console.log( "截取"+sta+"到"+sto+"的结果："+use['part'](str1,sta,sto));
 
+
