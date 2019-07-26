@@ -1,0 +1,14 @@
+# JavaScript
+## 准备工作
+编写JavaScript脚本不需要任何特殊的软件，一个普通的文本编辑器和一个web浏览器
+用JavaScript编写代码必须通过HTML/XHTML文档才能执行。有两种方式可以做到这点。
+第一种方式是将JavaScript大麦放到文档`<head>`标签中的`<script>`标签值之间
+一种更好的方式是把JavaScript代码存为一个扩展名为.js的独立文件。典型的做法是在
+文档的`<head>`部分放一个`<script>`标签，并把它的src属性指向该文件。但最好的做法是
+把`<script>`标签放到HTML文档的最后，`</body>`标签之前：这样能使浏览器更快的加载
+页面。
+
+# 第三章DOM
+* 节点的概念
+* 5个常用DOM方法：getElementById、getElementsByTagName、getElementsByClassName、
+getAttribute和setAttribute.
