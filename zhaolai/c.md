@@ -65,13 +65,30 @@
       
    3. 文件内容
       1. `#include <stdio.h>`引入自带的库
-      2. `#include "文件名"`导包
+      
+      2. `#include "文件名"`导包.c
+      
       3. `int main(int argv, char* argc[]){}`这是完整形式的`main`函数
          1. `argv`表示运行时参数的长度
          2. `argc[]`表示运行时参数的列表
+         
       4. `return 0`意味着执行成功，其他则是失败
+      
       5. `for(a=0;a<10;a++)`循环，但是需要提前声明`int a`
+      
       6. `if(条件){结果}`条件语句
+      
+      7. 为了节约编译时间,导包的时候导.h,事先编译好.o,编写一个Makefile文件,运行`gcc hello1.c max.o min.o -o hello1.o`
+      
+         ```
+         # this is a Makefile.
+         hello.out:hello.c max.o min.o
+                 gcc hello1.c max.o min.o -o hello1.o
+         max.o:max.c
+                 gcc -c max.c -o max.o
+         min.o:min.c
+                 gcc -c min.c -o min.o
+         ```
       
    
 4. make

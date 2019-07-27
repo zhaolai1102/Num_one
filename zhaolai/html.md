@@ -24,7 +24,7 @@
 1. 包含关于文档的机器可读信息,标题,脚本js,样式css
 2. 如果第一个元素是标签则可以省略start标签
 3. 如果</head>前的内容不是空格或者注释则可以省略end标签
-4. html的第一个子元素
+4. html的第一个子元素haolai1102/Num_one
 
 ### link
 
@@ -71,7 +71,7 @@
       7. `strict-origin-when-cross-origin`执行相同源请求时发送一个完整的url
       8. `unsafe-URL`发送去掉参数的url对于同源和跨源请求
    
-5. `theme-color`代表自定义颜色,值应该为有效的css颜色
+5. `theme-color`代表自定义颜色,值应该为有效的css颜色haolai1102/Num_one
 
 8. `color-scheme`制定一个或兼容的多个配色方案
    1. `normal`默认的调色板
@@ -871,7 +871,28 @@
 对话框
 
 1. open对话框处于活动状态且可以用于交互<dialog open>
-2. 
+
+### summary
+
+是<details>的公开摘要元素,点击可以切换父元素的打开和关闭
 
 ## Wed组件
+
+### slot
+
+占位符,
+
+1. name插槽的名称
+
+### template
+
+内容模板,保持HTML不立即呈的机制,
+
+
+
+
+
+
+
+
 
