@@ -550,7 +550,7 @@ fixed固定,local相对于元素内容固定,指的时滚动机制,scroll背景�
 
 1个值4个边,2个值上下,左右,3个值上,左右,下,4个只上右下左
 
-### board-width
+### border-width
 
 边框的宽度
 
@@ -706,7 +706,7 @@ to {top:200px;}
 
 ### @counter-style
 
-计数器样式
+自定义计数器样式
 
 # 分列
 
@@ -855,7 +855,7 @@ path( [<fill-rule>,]? <string>)
 
 使用标点符号换行,中文日语韩语
 
-### line-heighyanghsit
+### line-height
 
 行间距
 
@@ -961,7 +961,7 @@ vertical-align定义网格内容的起始行
 
 ## 边距
 
-### margi
+### margin
 
 margin-top,margin-right,margin-bottom,margin-left的简写
 
@@ -1050,15 +1050,15 @@ CSSOM的滚动框接口被触发时的行为
 
 ### scroll-margin-block
 
-定义捕捉滚动框区域的区间
+定义捕捉滚动框区域的区间, 排版时竖版
 
 ### scroll-margin-block-end
 
-定义捕捉滚动框区域的结束
+定义捕捉滚动框区域的结束, 排版时竖版
 
 ### scroll-margin-block-start
 
-定义捕捉滚动框区域的开始
+定义捕捉滚动框区域的开始, 排版时竖版
 
 ### scroll-margin-bottom
 
@@ -1066,15 +1066,15 @@ CSSOM的滚动框接口被触发时的行为
 
 ### scroll-margin-inline
 
-滚动边距长度
+定义捕捉滚动框区域的区间, 排版时横版
 
 ### scroll-margin-inline-end
 
-定义捕捉滚动框区域的结束
+定义捕捉滚动框区域的结束,排版时横版
 
 ### scroll-margin-inline-start
 
-定义捕捉滚动框区域的结束
+定义捕捉滚动框区域的结束,排版时横版
 
 ### scroll-margin-left
 
@@ -1110,27 +1110,27 @@ CSSOM的滚动框接口被触发时的行为
 
 ### scroll-padding-block
 
-设置滚动填充指针偏移
+设置滚动填充指针偏移, 排版时竖版
 
 ### scroll-padding-block-end
 
-设置滚动填充指针向后偏移
+设置滚动填充指针向后偏移, 排版时竖版
 
 ### scroll-padding-block-start
 
-设置滚动填充指针向前偏移
+设置滚动填充指针向前偏移, 排版时竖版
 
 ### scroll-padding-inline
 
-设置滚动填充指针偏移
+设置滚动填充指针偏移,排版时横版
 
 ### scroll-padding-inline-end
 
-设置滚动填充指针向后偏移
+设置滚动填充指针向后偏移,排版时横版
 
 ### scroll-padding-inline-start
 
-设置滚动填充指针向前偏移
+设置滚动填充指针向前偏移,排版时横版
 
 ### scroll-snap-align
 
@@ -1599,3 +1599,11 @@ dppx每px单位的点数  被写作x
 10. in英寸
 11. pc 1/6lin,12pt
 12. pt 1/72lin
+
+### position
+
+1. center中间
+2. top顶部
+3. right右边
+4. bottom底部
+5. left左边
