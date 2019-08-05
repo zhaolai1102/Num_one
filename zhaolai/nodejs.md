@@ -84,8 +84,11 @@
          	if(data != null){
          		xxxxxxxxxxx
          	}
-      }	// get请求
+      	}	// get请求
          
+         ```
+      ```
+      
       ```
    
 3. window判断执行环境
@@ -110,7 +113,7 @@
          		不出错的代码,data为读取到的数据;
          	}
          });
-         ```
+      ```
    
       2. 同步读取文件
    
@@ -334,9 +337,25 @@
    
       4. Diffie-Hellman
    
-         DH秘钥交换协议,它可以让双方在不泄漏密钥的情况下协商出一个密钥来。
-   
-         ```
+         var formidable = require('formidable'),
+          http = require('http'),
+             util = require('util');
+      
+         http.createServer(function(req, res) {
+           if (req.url == '/upload' && req.method.toLowerCase() == 'post') {
+             // parse a file upload
+             var form = new formidable.IncomingForm();
+      
+             form.parse(req, function(err, fields, files) {
+               res.writeHead(200, {'content-type': 'text/plain'});
+               res.write('received upload:\n\n');
+               res.end(util.inspect({fields: fields, files: files}));
+             });
+           
+             return;
+        }DH秘钥交换协议,它可以让双方在不泄漏密钥的情况下协商出一个密钥来。
+      
+      ```
          const crypto = require('srypto');
          var ming = crypto.createDiffieHellman(512);
          var ming_keys = ming.generateKeys(); ming秘密数
@@ -345,23 +364,23 @@
          var hong = crypto.createDiffieHellman(prime, generator);
          var hong_keys = hong.generateKeys(); hong秘密数
          var ming_secret = ming.computeSecret(hong_keys);
-         var hong_secret = hong.computeSecret(ming_keys);
+      var hong_secret = hong.computeSecret(ming_keys);
          得到相同秘钥
          ```
-   
+      
       5. RSA
-   
+      
          非对称加密算法,即由一个私钥和一个公钥构成的密钥对，通过私钥加密，公钥解密，或者通过公钥加密，私钥解密。其中，公钥可以公开，私钥必须保密。RSA加密的原始信息必须小于Key的长度
-   
+      
          ```
          生成密钥对(终端中使用这些命令)
          openssl genrsa -aes256 -out rsa-key.pem 2048
          获得私钥rsa-prv.pem
          openssl rsa -in rsa-key.pem -outform PEM -out rsa-prv.pem
-         获得公钥rsa-pub.pem
+      获得公钥rsa-pub.pem
          openssl rsa -in rsa-key.pem -outform PEM -pubout -out rsa-pub.pem
          ```
-   
+      
          ```
          const fs = require('fs'),crypto = require('crypto'),prvKey = fs.readFileSync('./rsa-prv.pem', 'utf8'),pubKey = fs.readFileSync('./rsa-pub.pem', 'utf8');
          var message = 'Hello, world!';
@@ -374,8 +393,36 @@
          var dec_by_prv = crypto.privateDecrypt(prvKey, enc_by_pub);
          var decrypted = dec_by_prv.toString('utf8');私钥解密
          ```
-   
+      
       6. https://www.liaoxuefeng.com/wiki/1022910821149312/1023025778520640
+      
+   6. formidable模块
+   
+      ```
+      var formidable = require('formidable'),
+          http = require('http'),
+          util = require('util');
+       
+      http.createServer(function(req, res) {
+          if (req.url == '/upload' && req.method.toLowerCase() == 'post') {
+              // parse a file upload
+              var form = new formidable.IncomingForm();
+              form.parse(req, function(err, fields, files) {                      fields是接收的内容
+                  res.writeHead(200, {'content-type': 'text/plain'});
+                  res.write('received upload:\n\n');
+                  res.end(util.inspect({fields: fields, files: files}));
+              });
+          return;
+      }
+      ```
+   
+   7. mysql模块
+   
+      ```
+      
+      ```
+   
+      
    
 6. 配置运行环境
 
@@ -392,4 +439,6 @@
       }
       ```
 
-   2. 命令行 `npm install`
+      命令行 `npm install`
+   
+   2. `npm init`npm初始化, `npm install 模块名 --save`安装对应的模块
