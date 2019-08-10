@@ -59,29 +59,13 @@ p {
 
 [class^="icon-"],
 [class*="icon-"] {
-    font-family: 'icomoon';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
     line-height: 1;
-    -webkit-font-smoothing: antialiased;
 }
 
 [class^="imv2-"],
 [class*=" imv2-"] {
-    font-family: 'imv2' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
+
     line-height: 1;
-    letter-spacing: 0;
-    font-feature-settings: "liga";
-    font-variant-ligatures: discretionary-ligatures;
-    -webkit-font-smoothing: antialiased;
 }
 
 .pa {
@@ -214,6 +198,11 @@ ul {
         .header-unlogin {
             >li {
                 float: left;
+            }
+
+            li a:hover {
+
+                color: red !important;
             }
         }
 
@@ -621,6 +610,93 @@ ul {
                 .g-banner-box {
                     position: relative;
                     height: 316px;
+
+                    .gbb {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 316px;
+
+                        img {
+                            transition: all 1s;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 936px;
+                            height: 316px;
+                            opacity: 0;
+                        }
+
+                        .active {
+                            transition: all 1s;
+                            opacity: 1;
+                        }
+                    }
+
+
+                    .left1 {
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                    }
+
+                    .right1 {
+                        border-top-left-radius: 3px;
+                        border-bottom-left-radius: 3px;
+                        right: 0;
+                    }
+
+                    .right1,
+                    .left1 {
+                        transition: all .3s;
+
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.372);
+
+                            span {
+                                color: #FFF;
+                            }
+                        }
+
+                        cursor: pointer;
+                        background-color: rgba(255, 255, 255, 0);
+                        position: absolute;
+                        width: 36px;
+                        height: 60px;
+                        top:128px;
+                        text-align: center;
+
+                        span {
+                            display: block;
+                            margin-top: 22px;
+                            color: rgba(255, 255, 255, 0.5);
+                            font-weight: bold;
+                        }
+                    }
+
+                    .banner-bottom {
+                        position: absolute;
+                        text-align: right;
+                        bottom: 20px;
+                        left: 0;
+                        right: 0;
+                        padding-right: 24px;
+
+                        span {
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: rgba(0, 0, 0, 0.55);
+                            border: rgba(255, 255, 255, 0.7) solid 1px;
+                            margin-right: 8px;
+                            cursor: pointer;
+                        }
+
+                        .active {
+                            background-color: #FFF;
+                        }
+                    }
                 }
 
                 .path-banner {
@@ -1405,9 +1481,12 @@ ul {
         .jyms-container {
             position: relative;
             height: 100%;
-            width: 10000px;
+            width: 12000px;
+            left: -3546px;
+            font-size: 0;
 
             .jyms-lb-ys {
+                transition: all 1s;
                 display: inline-block;
                 width: 1152px;
                 position: relative;
@@ -1508,9 +1587,14 @@ ul {
             left: -24px;
             border-radius: 50%;
             cursor: pointer;
-
+            text-align: center;
             &:hover {
                 background-color: #FFF;
+            }
+            span {
+                font-weight: bold;
+                display: block;
+                margin-top: 16px;
             }
         }
 
@@ -1617,51 +1701,63 @@ ul {
             border: #ffffff solid 2px;
             border-radius: 50%;
             transition: all .3s;
+
             &.two {
                 margin-left: 40px;
             }
+
             &.blue {
                 .paopao {
                     background-color: #337ab7;
+
                     span {
                         color: #337ab7;
                     }
                 }
             }
+
             &.yellow {
                 .paopao {
                     background-color: #b5bb3e;
+
                     span {
                         color: #b5bb3e;
                     }
                 }
             }
+
             &.zs {
                 .paopao {
                     background-color: #b33db3;
+
                     span {
                         color: #b33db3;
                     }
                 }
             }
+
             &.green {
                 .paopao {
                     background-color: #34b311;
+
                     span {
                         color: #34b311;
                     }
                 }
             }
-            
+
             &:hover {
                 transition: all .3s;
                 border: #337ab7 solid 2px;
+
                 &.yellow {
                     border: #b5bb3e solid 2px;
                 }
+
                 &.green {
                     border: #34b311 solid 2px;
                 }
+
                 &.zs {
                     border: #b33db3 solid 2px;
                 }
@@ -1728,18 +1824,22 @@ ul {
 
 #footer {
     padding: 36px 0;
+
     .container {
         position: relative;
     }
+
     .linker {
         a {
             margin: 0 10px;
             color: #787d82;
+
             &:hover {
                 color: rgb(0, 0, 0);
             }
         }
     }
+
     .bq {
         margin-top: 20px;
         color: #787d82;
@@ -1749,15 +1849,18 @@ ul {
 
     .tg {
         position: absolute;
-            right: 0;
-            bottom: 0;
+        right: 0;
+        bottom: 0;
+
         .tg-container {
             .l {
                 margin-right: 32px;
             }
+
             a {
                 margin: 0 auto;
             }
+
             .gzh {
                 display: block;
                 width: 32px;
@@ -1766,6 +1869,7 @@ ul {
                 background-repeat: no-repeat;
                 background-position: -52px -221px;
             }
+
             .wb {
                 display: block;
                 width: 32px;
@@ -1773,8 +1877,9 @@ ul {
                 background-image: url(http://imooc.com/static/img/idx-btm.png);
                 background-repeat: no-repeat;
                 background-position: 0px -221px;
-            
+
             }
+
             span {
                 font-size: 12px;
                 color: #71777d;
@@ -1785,11 +1890,12 @@ ul {
 
 #goTop {
     position: fixed;
-    right:0;
+    right: 0;
     top: 40%;
     padding: 16px;
     background-color: #fff;
-    box-shadow: 0 0 7px 7px rgba(33, 33, 33, 0.077); 
+    box-shadow: 0 0 7px 7px rgba(33, 33, 33, 0.077);
+
     a {
         color: #71777d;
         display: block;
@@ -1799,16 +1905,20 @@ ul {
         padding: 16px 0;
         font-size: 10px;
         border-bottom: #71777d15 solid 1px;
+
         &:first-child {
             padding-top: 0px;
         }
+
         &:last-child {
             border-bottom: none;
             padding-bottom: 0px;
         }
+
         .wa {
             display: none;
         }
+
         .hb {
             display: block;
             margin-left: 5px;
@@ -1818,12 +1928,15 @@ ul {
             background-size: 100% 100%;
             background-position: top center;
         }
+
         &:hover {
 
             color: #1c1f21;
+
             span.tb {
                 display: none;
             }
+
             span.wa {
                 display: block;
             }

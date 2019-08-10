@@ -43,28 +43,11 @@ p {
 
 [class^="icon-"],
 [class*="icon-"] {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased; }
+  line-height: 1; }
 
 [class^="imv2-"],
 [class*=" imv2-"] {
-  font-family: 'imv2' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  letter-spacing: 0;
-  font-feature-settings: "liga";
-  font-variant-ligatures: discretionary-ligatures;
-  -webkit-font-smoothing: antialiased; }
+  line-height: 1; }
 
 .pa {
   position: absolute; }
@@ -167,6 +150,8 @@ ul {
     position: relative; }
     #header #login-area .header-unlogin > li {
       float: left; }
+    #header #login-area .header-unlogin li a:hover {
+      color: red !important; }
     #header #login-area .dist-money {
       line-height: 72px;
       position: relative;
@@ -470,6 +455,70 @@ ul {
         #main .banner-box .g-banner .g-banner-content .g-banner-box {
           position: relative;
           height: 316px; }
+          #main .banner-box .g-banner .g-banner-content .g-banner-box .gbb {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 316px; }
+            #main .banner-box .g-banner .g-banner-content .g-banner-box .gbb img {
+              transition: all 1s;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 936px;
+              height: 316px;
+              opacity: 0; }
+            #main .banner-box .g-banner .g-banner-content .g-banner-box .gbb .active {
+              transition: all 1s;
+              opacity: 1; }
+          #main .banner-box .g-banner .g-banner-content .g-banner-box .left1 {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px; }
+          #main .banner-box .g-banner .g-banner-content .g-banner-box .right1 {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            right: 0; }
+          #main .banner-box .g-banner .g-banner-content .g-banner-box .right1,
+          #main .banner-box .g-banner .g-banner-content .g-banner-box .left1 {
+            transition: all .3s;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0);
+            position: absolute;
+            width: 36px;
+            height: 60px;
+            top: 128px;
+            text-align: center; }
+            #main .banner-box .g-banner .g-banner-content .g-banner-box .right1:hover,
+            #main .banner-box .g-banner .g-banner-content .g-banner-box .left1:hover {
+              background-color: rgba(0, 0, 0, 0.372); }
+              #main .banner-box .g-banner .g-banner-content .g-banner-box .right1:hover span,
+              #main .banner-box .g-banner .g-banner-content .g-banner-box .left1:hover span {
+                color: #FFF; }
+            #main .banner-box .g-banner .g-banner-content .g-banner-box .right1 span,
+            #main .banner-box .g-banner .g-banner-content .g-banner-box .left1 span {
+              display: block;
+              margin-top: 22px;
+              color: rgba(255, 255, 255, 0.5);
+              font-weight: bold; }
+          #main .banner-box .g-banner .g-banner-content .g-banner-box .banner-bottom {
+            position: absolute;
+            text-align: right;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            padding-right: 24px; }
+            #main .banner-box .g-banner .g-banner-content .g-banner-box .banner-bottom span {
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: rgba(0, 0, 0, 0.55);
+              border: rgba(255, 255, 255, 0.7) solid 1px;
+              margin-right: 8px;
+              cursor: pointer; }
+            #main .banner-box .g-banner .g-banner-content .g-banner-box .banner-bottom .active {
+              background-color: #FFF; }
         #main .banner-box .g-banner .g-banner-content .path-banner {
           position: relative;
           height: 128px;
@@ -998,8 +1047,11 @@ ul {
     .container-types .jyms-lb-container .jyms-container {
       position: relative;
       height: 100%;
-      width: 10000px; }
+      width: 12000px;
+      left: -3546px;
+      font-size: 0; }
       .container-types .jyms-lb-container .jyms-container .jyms-lb-ys {
+        transition: all 1s;
         display: inline-block;
         width: 1152px;
         position: relative;
@@ -1076,10 +1128,16 @@ ul {
       top: 50%;
       left: -24px;
       border-radius: 50%;
-      cursor: pointer; }
+      cursor: pointer;
+      text-align: center; }
       .container-types .jyms-lb-container .left2:hover,
       .container-types .jyms-lb-container .right2:hover {
         background-color: #FFF; }
+      .container-types .jyms-lb-container .left2 span,
+      .container-types .jyms-lb-container .right2 span {
+        font-weight: bold;
+        display: block;
+        margin-top: 16px; }
     .container-types .jyms-lb-container .right2 {
       left: 1129px; }
     .container-types .jyms-lb-container .pagination2 {
