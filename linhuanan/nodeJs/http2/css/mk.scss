@@ -1,0 +1,1840 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    min-width: 1200px;
+    // background-image: url("../images/bj.png");
+    // background-repeat: no-repeat;
+    // background-position: left top;
+    // background-size: 1680px auto;
+    // opacity: 0.3;
+    font: 14px/1.5 "PingFang SC", "微软雅黑", "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+}
+
+:link,
+:visited,
+ins {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a,
+input,
+button {
+    outline: none;
+}
+
+a {
+    background-color: transparent;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+
+img {
+    border: 0;
+}
+
+p {
+    word-break: break-all;
+}
+
+.r {
+    float: right;
+}
+
+.l {
+    float: left;
+}
+
+.icon-search:before {
+    content: "\e610";
+}
+
+[class^="icon-"],
+[class*="icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+[class^="imv2-"],
+[class*=" imv2-"] {
+    font-family: 'imv2' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    letter-spacing: 0;
+    font-feature-settings: "liga";
+    font-variant-ligatures: discretionary-ligatures;
+    -webkit-font-smoothing: antialiased;
+}
+
+.pa {
+    position: absolute;
+}
+
+i {
+    font-style: italic;
+}
+
+.visible-xs-block {
+    display: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.newcontainer,
+.page-container {
+    margin: 0 auto;
+}
+
+div {
+    display: block;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+#header {
+    background: #07111b;
+
+    .page-container {
+        background-color: #ffffff;
+        width: auto;
+        padding-right: 10px;
+        z-index: 900;
+        box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+        position: relative;
+    }
+
+    .logo {
+        float: left;
+        margin: 0 20px;
+
+        a {
+            background: none !important;
+            display: block;
+            width: 140px;
+            height: 72px;
+            transition: background-color 0.2s;
+
+            img {
+                height: 72px;
+                border: 0;
+            }
+        }
+    }
+
+    .nav-item {
+        margin: 0;
+        padding: 0;
+
+        li {
+            float: left;
+
+            a {
+                color: #4D555D !important;
+                padding: 0 20px;
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                height: 72px;
+                line-height: 72px;
+                transition: background-color 0.3s;
+                position: relative;
+
+                .icn-new {
+                    position: absolute;
+                    display: inline-block;
+                    top: 14px;
+                    width: 16px;
+                    height: 16px;
+                    background: url(http://imooc.com/static/img/common/new.png) no-repeat 0 0;
+                }
+            }
+        }
+    }
+
+
+
+    #login-area {
+        float: right;
+        position: relative;
+
+        .header-unlogin {
+            >li {
+                float: left;
+            }
+        }
+
+        .dist-money {
+            line-height: 72px;
+            position: relative;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+
+            a {
+                width: 122px !important;
+                padding: 0 12px;
+                box-sizing: border-box;
+            }
+
+            >a {
+                color: #71777d !important;
+            }
+
+            .redPacket {
+                display: inline-block;
+                width: 14px;
+                height: 16px;
+                vertical-align: text-top;
+                position: relative;
+                top: 2px;
+                margin-right: 8px;
+                background: url(http://www.imooc.com/static/img/index/redPacket.png) no-repeat;
+                background-size: 100% 100%;
+                background-position: top center;
+            }
+        }
+
+        .app-download {
+            line-height: 72px;
+            color: rgba(255, 255, 255, 0.6);
+            position: relative;
+
+            >a {
+                padding: 0 15px;
+                font-size: 14px;
+                color: #71777d !important;
+            }
+
+            .app-load-box {
+                position: absolute;
+                right: 0;
+                top: 100%;
+                width: 304px;
+                padding: 10px 24px 22px;
+                box-sizing: border-box;
+                background-color: #FFF;
+                color: #4D555D;
+                line-height: 16px;
+                box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.2);
+                border-bottom-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+                z-index: 99999;
+                font-size: 12px;
+
+                h4 {
+                    margin: 12px 0;
+                    font-size: 14px;
+                    color: #1c1f21;
+                    text-align: center;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
+
+                img {
+                    width: 108px;
+                    height: 108px;
+                }
+
+                a.app-load-btn {
+                    display: block;
+                    color: #FFF;
+                    width: 132px;
+                    height: 36px;
+                    margin-bottom: 8px;
+                    line-height: 36px;
+                    background: #4D555D;
+                    border-radius: 18px;
+
+                    i {
+                        font-size: 16px;
+                        margin: 0 8px 0 12px;
+                        vertical-align: -2px;
+                    }
+                }
+            }
+        }
+
+        .header-signin {
+            color: #D9DDE1;
+            margin-left: 12px;
+
+            a {
+                color: #4d555d;
+                display: inline-block;
+                padding: 0 12px;
+                height: 72px;
+                line-height: 72px;
+                font-size: 14px;
+                transition: background-color 0.2s;
+            }
+        }
+    }
+}
+
+.search-warp {
+    position: relative;
+    float: left;
+    margin-left: 24px;
+
+    .searchTags {
+        z-index: 100;
+        bottom: 24px;
+        right: 40px;
+
+        a {
+            background-color: #f3f5f7;
+            color: #4D555D;
+
+            &:hover {
+                background-color: #f3f5f7;
+                color: #4D555D;
+            }
+
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+    }
+
+    .search-area {
+        border-bottom: 1px solid #D9DDE1;
+        float: right;
+        position: relative;
+        height: 46px;
+        width: 300px;
+        padding-right: 40px;
+        zoom: 1;
+        transition: width 0.3s;
+        margin: 12px 0;
+
+        .search-input {
+            color: #71777d;
+            padding: 12px 0;
+            width: 100%;
+            height: 46px;
+            line-height: 22px;
+            font-size: 12px;
+            float: left;
+            border: 0;
+            transition: background-color 0.3s;
+            background-color: transparent;
+            box-sizing: border-box;
+        }
+
+        .search-area-result {
+            position: absolute;
+            left: 0;
+            top: 60px;
+            width: 300px;
+            margin-bottom: 20px;
+            border-top: none;
+            background-color: #FFF;
+            box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.2);
+            font-size: 12px;
+            overflow: hidden;
+            display: none;
+            z-index: 800;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+    }
+
+    .showhide-search {
+        width: 20px;
+        height: 24px;
+        text-align: right;
+        position: absolute;
+        display: inline-block;
+        right: 14px;
+        bottom: 24px;
+        // padding: 0 8px;
+        // border-radius: 18px;
+
+        span {
+            text-align: center;
+            display: block;
+            height: 24px;
+            color: #757a7e;
+            cursor: pointer;
+            font-size: 20px;
+            line-height: 24px;
+            width: 30px;
+            border-radius: 10px;
+
+            &:hover {
+                color: red;
+                background-color: rgb(255, 140, 140);
+            }
+        }
+    }
+
+}
+
+.shop-cart {
+    height: 36px;
+    line-height: 36px;
+    margin: 18px 0;
+    position: relative;
+
+    .shop-cart-icon {
+        display: inline-block;
+        padding: 0 18px;
+        width: auto;
+        box-sizing: border-box;
+        border-radius: 18px;
+        height: 36px;
+        line-height: 34px;
+        color: #787d82;
+        text-align: center;
+        border: 1px solid #D9DDE1 !important;
+
+        .icon-shopping-cart,
+        .iconfont.icon-htmal5icon29 {
+            position: relative;
+            top: 2px;
+            font-size: 16px;
+            margin-right: 3px;
+        }
+
+        span {
+            color: #71777d;
+        }
+
+        .shopping_icon {
+            padding: 0px 5px;
+            height: 16px;
+            line-height: 16px;
+            background: #f01414;
+            color: #FFF;
+            margin-left: 8px;
+            border-radius: 8px;
+        }
+    }
+
+    .my-cart {
+        top: 54px;
+        display: none;
+        width: 344px;
+        padding: 0px 16px;
+        position: absolute;
+        right: 0;
+        background: #FFF;
+        box-sizing: border-box;
+        z-index: 99999;
+        box-shadow: 0 8px 16px 0 rgba(28, 31, 33, 0.2);
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        .cart-title-box {
+            padding: 13px 12px;
+            border-bottom: 1px solid #D3d6d9;
+
+            h2 {
+                font-weight: bold;
+                font-size: 14px;
+                color: #1c1f21;
+                height: 24px;
+                line-height: 24px;
+                font-weight: 400;
+            }
+
+            h5 {
+                height: 24px;
+                line-height: 24px;
+                font-size: 12px;
+                color: #9199a1;
+                font-weight: 400;
+            }
+        }
+
+        .cart-wrap {
+            .clear-cart {
+                height: 284px;
+                text-align: center;
+
+                .cartIcon {
+                    margin: 36px 0 8px;
+                    display: inline-block;
+                    font-size: 72px;
+                    color: #d3d6d9;
+                }
+
+                h3 {
+                    font-size: 14px;
+                    color: #545c63;
+                    text-align: center;
+                    line-height: 24px;
+                    font-weight: 400;
+                }
+
+                .text {
+                    margin-bottom: 8px;
+                    font-size: 12px;
+                    color: #9199a1;
+                    text-align: center;
+                    line-height: 24px;
+                }
+
+                .go-link {
+                    display: block;
+                    color: rgba(238, 20, 20, 0.6);
+                    font-size: 12px;
+                    line-height: 24px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+
+        .more-box {
+            padding: 16px 12px;
+            border-top: 1px solid #D3d6d9;
+
+            .show-box {
+                height: 32px;
+                line-height: 32px;
+                font-size: 12px;
+
+                .text {
+                    color: #93999f;
+
+                    a {
+                        color: #93999f;
+                    }
+                }
+            }
+
+            .go-cart {
+                width: 96px;
+                color: #FFF;
+                font-size: 12px;
+                line-height: 16px;
+                padding: 8px 16px;
+                background: rgba(233, 28, 28, 0.6);
+                border-radius: 16px;
+                border: none;
+            }
+        }
+    }
+}
+
+.bgfff {
+    background-color: #FFF !important;
+}
+
+.bg000 {
+    background-color: rgba(177, 197, 211, 0.1);
+}
+
+.msjy-bg {
+    background: url(http://imooc.com/static/img/index/eliteTbg.jpg) no-repeat center center;
+    height: 408px;
+    background-size: cover;
+}
+
+#main {
+    display: block;
+    padding: 0;
+    min-height: calc(100% - 140px);
+
+    >.bgfff {
+        box-shadow: 0 2px 8px 0 rgba(7, 17, 27, 0.06);
+    }
+
+    >.bg000 {
+        box-shadow: 0 2px 4px 0 rgba(7, 17, 27, 0.06);
+    }
+
+    .banner-box {
+        padding-top: 32px;
+
+        .g-banner {
+            background-color: #93999f;
+            box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.2);
+            position: relative;
+            height: 444px;
+            overflow: hidden;
+            width: 1152px;
+            margin: auto;
+            border-radius: 8px;
+
+            .g-banner-content {
+                position: relative;
+                float: left;
+                width: 936px;
+
+                .g-banner-box {
+                    position: relative;
+                    height: 316px;
+                }
+
+                .path-banner {
+                    position: relative;
+                    height: 128px;
+                    padding: 0 18px;
+                    overflow: hidden;
+                    box-shadow: 0px 4px 8px 0px rgba(7, 17, 27, 0.1);
+                    background-color: #FFF;
+                    text-align: center;
+
+                    &:before {
+                        content: " ";
+                        background: url(http://imooc.com/static/img/index/new/new-path.png) no-repeat;
+                        width: 68px;
+                        height: 68px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    a {
+                        position: relative;
+                        display: block;
+                        float: left;
+                        height: 128px;
+                        overflow: hidden;
+                        width: 20%;
+
+                        i {
+                            display: inline-block;
+                            width: 36px;
+                            height: 36px;
+                            background: url(http://imooc.com/static/img/index/new/path-2019.png) no-repeat;
+                            background-size: 100%;
+                            margin-top: 22px;
+
+                            transition: margin-top 0.05s;
+                            -webkit-transition: margin-top 0.5s;
+                            /* Safari */
+                        }
+
+                        &:hover {
+                            i {
+                                margin-top: 17px;
+                            }
+                        }
+
+                        .i-web {
+                            background-position: center 0;
+                        }
+
+                        .i-java {
+                            background-position: center -36px;
+                        }
+
+                        .i-python {
+                            background-position: center -72px;
+                        }
+
+                        .i-android {
+                            background-position: center -108px;
+                        }
+
+                        .i-php {
+                            background-position: center -144px;
+                        }
+
+                        .jyb-title {
+                            font-size: 14px;
+                            color: #07111b;
+                            margin-top: 4px;
+                            letter-spacing: 1px;
+                        }
+
+                        .jyb-desc {
+                            font-size: 12px;
+                            color: #969fa9;
+                        }
+                    }
+                }
+            }
+
+            .submenu {
+                position: absolute;
+                background-color: #fff;
+                top: 0px;
+                left: 216px;
+                width: 768px;
+                height: 444px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+                box-sizing: border-box;
+                z-index: 500;
+
+                .inner-box {
+                    position: relative;
+                    min-height: 150px;
+                    background-color: #fff;
+                    padding: 12px 48px 32px;
+
+                    .subinner-box {
+                        overflow: hidden;
+                        box-sizing: border-box;
+                    }
+                }
+
+                .line-box {
+                    position: relative;
+                    height: 1px;
+                    margin: 35px 0 23px 0;
+                    background-color: rgba(77, 85, 93, 0.08);
+
+                    span {
+                        color: red;
+                        font-size: 14px;
+                        font-weight: bold;
+                        position: absolute;
+                        top: -12px;
+                        padding-right: 12px;
+                        line-height: 24px;
+                        background-color: #FFF;
+                    }
+                }
+
+                .content-box {
+                    a {
+                        margin: 0 24px 16px 0;
+                        font-size: 14px;
+                        color: #4D555D;
+                        line-height: 22px;
+                        margin-right: 24px;
+                        display: inline-block;
+
+                        &:hover {
+                            color: red;
+                        }
+                    }
+                }
+
+                .recomment-box {
+                    position: absolute;
+                    bottom: 0;
+                    background: #F8FAFC;
+                    padding: 36px 0 0 48px;
+
+                    .card {
+                        width: 312px;
+                        height: 60px;
+                        margin-right: 48px;
+                        margin-bottom: 36px;
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        img {
+                            width: 64px;
+                            height: 42px;
+                            border-radius: 4px;
+                            background-color: #CCC;
+                        }
+
+                        .card-content {
+                            color: #07111b;
+                            margin-left: 16px;
+
+                            .card-name {
+                                width: 232px;
+                                line-height: 21px;
+                                font-size: 12px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                white-space: nowrap;
+                            }
+
+                            .card-price,
+                            .card-info {
+                                font-size: 12px;
+                                line-height: 21px;
+                                color: #4D555D;
+                            }
+
+                            i {
+                                margin: 0 3px;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .menuwrap {
+            background-color: rgba(7, 17, 27, 0.5);
+            opacity: 0.502;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 216px;
+            height: 444px;
+            z-index: 1;
+        }
+
+        .menuContent {
+            position: relative;
+            float: left;
+            width: 216px;
+            height: 444px;
+            z-index: 2;
+            padding-top: 12px;
+            box-sizing: border-box;
+            background: #2b333b;
+            border-bottom-left-radius: 4px;
+            font-weight: 400;
+
+            .item {
+                height: 60px;
+                line-height: 60px;
+                font-size: 12px;
+                cursor: pointer;
+                padding-left: 12px;
+                position: relative;
+
+                >a {
+                    display: block;
+                    color: rgba(255, 255, 255, 0.6);
+                    padding: 0 16px;
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                    height: 60px;
+                    transition: all .1s;
+                }
+
+                .group {
+                    font-size: 14px;
+                }
+
+                span.iconfont.icon-youjiantou1 {
+                    position: absolute;
+                    right: 5px;
+                    top: 24px;
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 2px;
+                }
+            }
+
+            .js-menu-item-on a {
+                color: #FFF;
+                background-color: rgba(255, 255, 255, 0.3)
+            }
+        }
+
+    }
+}
+
+.container-teacher-types em {
+    color: #FFF !important;
+}
+
+.container-types {
+    width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 36px 0 48px;
+
+    .types-title {
+        position: relative;
+        font-size: 14px;
+        color: #93999f;
+        letter-spacing: 0.6px;
+        line-height: 36px;
+        text-align: center;
+
+        em {
+            font-size: 20px;
+            font-weight: 600;
+            color: #4D555D;
+            margin: 0 3px;
+            font-style: normal;
+        }
+
+        .tit-icon {
+            display: inline-block;
+            vertical-align: bottom;
+            width: 56px;
+            height: 36px;
+            background: url(http://imooc.com/static/img/index/icon.png) no-repeat;
+            background-size: 100%;
+        }
+
+        .tit-icon-l {
+            margin-right: 24px;
+        }
+
+        .tit-icon-r {
+            margin-left: 24px;
+        }
+
+        span.icon-shizhan-l {
+            background-position: center 0;
+        }
+
+        span.icon-shizhan-r {
+            background-position: center -36px;
+        }
+
+        span.icon-haoke-l {
+            background-position: center -72px;
+        }
+
+        span.icon-haoke-r {
+            background-position: center -108px;
+        }
+
+        span.icon-xinshourumen-l {
+            background-position: center -144px;
+        }
+
+        span.icon-xinshourumen-r {
+            background-position: center -180px;
+        }
+
+        span.icon-jnts-l {
+            background-position: center -216px;
+        }
+
+        span.icon-jnts-r {
+            background-position: center -252px;
+        }
+
+        span.icon-qyjs-l {
+            background-position: center -288px;
+        }
+
+        span.icon-qyjs-r {
+            background-position: center -324px;
+        }
+
+        span.icon-jcsjjyw-l {
+            background-position: center -360px;
+        }
+
+        span.icon-jcsjjyw-r {
+            background-position: center -396px;
+        }
+
+        span.icon-jyms-l {
+            background-position: center -432px;
+        }
+
+        span.icon-jyms-r {
+            background-position: center -468px;
+        }
+
+        span.icon-dztqmx-l {
+            background-position: center -504px;
+        }
+
+        span.icon-dztqmx-r {
+            background-position: center -540px;
+        }
+
+        .types-more {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+
+            span {
+                font-size: 12px;
+            }
+
+            &:hover {
+                color: #FFF;
+            }
+        }
+    }
+
+    .types-content {
+        margin-top: 24px;
+        margin-left: -18px;
+
+        .adsense-box {
+            margin-bottom: 36px;
+            margin-left: 18px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            text-align: center;
+
+            a {
+                display: block;
+                width: 567px;
+                height: 108px;
+                border-radius: 8px;
+                overflow: hidden;
+                padding: 30px 0;
+                box-sizing: border-box;
+                background: rgba(7, 17, 27, 0.4);
+
+                &:hover {
+                    transition: all 0.3s;
+                    box-shadow: 0 6px 10px 0 rgba(7, 17, 27, 0.15);
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: #fff;
+                    letter-spacing: 2px;
+                    line-height: 28px;
+                    text-shadow: 0 2px 2px rgba(7, 17, 27, 0.4);
+                }
+
+                p {
+                    font-size: 12px;
+                    color: #FFF;
+                    line-height: 16px;
+                    text-shadow: 0 2px 2px rgba(7, 17, 27, 0.4);
+                    margin-top: 4px;
+                }
+
+                .ellipsis {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .index-card-container {
+            float: left;
+            margin-left: 18px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            width: 216px;
+            height: 252px;
+            position: relative;
+            transition: .3s all linear;
+
+            .index-card.hot {
+                background-color: #F02930;
+                background-image: linear-gradient(90deg, #f68688 0%, #f02930 100%);
+            }
+
+            .index-card.new {
+                background-color: #FFAA00;
+                background-image: linear-gradient(90deg, #FFAA00 0%, rgb(225, 120, 7) 100%);
+            }
+
+            .index-card.upgrade {
+                background-color: #e3aaff;
+                background-image: linear-gradient(90deg, #e3aaff 0%, #9634c7 100%);
+            }
+
+            .index-card {
+                position: absolute;
+                border: 2px solid #FFF;
+                border-radius: 12px;
+                top: 8px;
+                left: -8px;
+                z-index: 4;
+                font-family: 'dincondm';
+                font-size: 12px;
+                color: #FFF;
+                line-height: 20px;
+                padding: 0 8px;
+            }
+
+            .index-card-top {
+                overflow: hidden;
+                width: 216px;
+                height: 120px;
+                position: relative;
+                border-radius: 8px;
+                transition: all .3s;
+
+                .index-banner {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #f3f5f7;
+                    border-radius: 8px;
+                }
+
+                .index-label {
+                    position: absolute;
+                    bottom: 6px;
+                    left: 8px;
+                    font-size: 12px;
+                    color: #FFF;
+                    line-height: 16px;
+
+                    label {
+                        display: inline-block;
+                        background: rgba(28, 31, 33, 0.6);
+                        border-radius: 4px;
+                        padding: 4px 8px;
+                        margin-right: 4px;
+                        margin-bottom: 2px;
+                        margin-right: 0px;
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            .index-card-content {
+                padding: 8px;
+
+                .index-card-name {
+                    font-size: 16px;
+                    text-overflow: ellipsis;
+                    word-wrap: break-word;
+                    overflow: hidden;
+                    height: 46px;
+                    font-weight: bold;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    transition: all .3s;
+                    color: #07111b;
+                    line-height: 24px;
+                }
+
+                .index-card-info {
+                    font-size: 12px;
+                    color: #93999f;
+                    line-height: 24px;
+                    margin-top: 8px;
+                    font-weight: 400;
+
+                    span {
+                        margin-right: 12px;
+                        display: inline-block;
+                    }
+
+                    .index-start-box {
+                        color: rgba(255, 153, 0, 0.4);
+                        margin-right: 0px;
+                    }
+
+                    .iconfont.icon-xingxing {
+                        color: #ff9900;
+                        margin-right: 0px;
+                        width: 7px;
+                    }
+                }
+
+                .index-card-price {
+                    font-size: 12px;
+                    color: #4d555d;
+                    font-weight: bold;
+
+                    .cost-price {
+                        margin-left: 5px;
+                        text-decoration: line-through;
+                    }
+
+                    .sales-tip {
+                        box-sizing: border-box;
+                        background: rgba(242, 13, 13, 0.6);
+                        border-radius: 4px;
+                        color: #FFF;
+                        padding: 0 4px;
+                        position: relative;
+                        display: inline-block;
+                        text-align: center;
+                    }
+                }
+            }
+
+            a:hover {
+                .index-card-content h3 {
+                    color: red;
+                }
+
+                .index-card-top {
+                    box-shadow: 0 12px 24px 0 rgba(7, 17, 27, 0.1);
+                }
+            }
+        }
+    }
+
+    .index-yw-list {
+        height: 1479px;
+        width: 1152px;
+        min-height: 560px;
+        position: relative;
+        margin-left: 0px !important;
+        margin-top: 24px;
+
+        .index-yw-item {
+            position: absolute;
+            width: 372px;
+            padding: 24px 32px 32px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+            border-radius: 10px;
+            background-color: #FFF;
+
+            &:hover {
+                transition: all .3s;
+                box-shadow: 0 4px 10px 3px rgba(4, 11, 18, 0.1);
+            }
+
+            .topic-label {
+                &.hot {
+                    line-height: 24px;
+                    border-radius: 15px;
+                    font-size: 12px;
+                    background-color: rgba(0, 180, 60, 0.8);
+                    color: #FFF;
+                    padding: 0px 12px;
+                    display: inline-block;
+                }
+
+                &.article {
+                    color: rgba(0, 140, 200, 0.6);
+                    display: inline-block;
+                    line-height: 24px;
+                    font-size: 12px;
+                    font-weight: 10;
+                }
+
+                &.question {
+                    color: rgba(0, 180, 60, 0.8);
+                    display: inline-block;
+                    line-height: 24px;
+                    font-size: 12px;
+                    font-weight: 10;
+                }
+            }
+
+            .topic-banner {
+                margin-bottom: 8px;
+                display: block;
+
+                &.hot {
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    a {
+                        width: 224px;
+                        color: rgba(0, 180, 60, 0.8);
+                        transition: all .3s;
+
+                        &:hover {
+                            color: rgba(28, 152, 69, 0.8);
+                        }
+                    }
+                }
+
+                &.article {
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    a {
+                        width: 224px;
+                        color: #1c1f21;
+                        transition: all .3s;
+
+                        &:hover {
+                            color: rgba(39, 160, 205, 0.8);
+                        }
+                    }
+                }
+
+                &.question {
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    a {
+                        width: 224px;
+                        color: #1c1f21;
+                        transition: all .3s;
+
+                        &:hover {
+                            color: rgba(0, 180, 60, 0.8);
+                        }
+                    }
+                }
+
+                img {
+                    width: 72px;
+                    border-radius: 8px;
+                }
+            }
+
+            .article-content {
+                margin-top: 12px;
+                line-height: 24px;
+                font-size: 12px;
+                font-weight: 400;
+                color: #4D555D;
+            }
+
+            .wt-content {
+                margin-top: 5px;
+                line-height: 24px;
+                font-size: 12px;
+                font-weight: 400;
+                color: #4d555d;
+            }
+
+            .wt-status {
+                font-size: 13px;
+            }
+
+            .article-bottom {
+                margin-top: 12px;
+
+                span {
+                    font-size: 12px;
+                    color: #93a0ac;
+                    margin-right: 24px;
+                }
+
+                a {
+                    &.green {
+                        color: rgba(0, 180, 60, 0.8);
+                        font-size: 12px;
+                    }
+
+                    &.blue {
+                        color: rgba(0, 140, 200, 0.6);
+                        font-size: 12px;
+                    }
+
+                    .icon-youjiantou {
+                        color: rgba(0, 140, 199, 0.6);
+                    }
+                }
+            }
+
+            .topic-line {
+                position: relative;
+                margin: 24px 0;
+                height: 1px;
+                background-color: #8a8a8a51;
+
+                span {
+                    display: block;
+                    background-color: #fff;
+                    font-size: 12px;
+                    position: absolute;
+                    top: -8px;
+                    padding-right: 12px;
+                    color: #71777d;
+                }
+            }
+
+            .topic-return {
+                .return-row {
+                    display: block;
+                    margin-bottom: 16px;
+
+                    img {
+                        width: 72px;
+                        border-radius: 8px;
+                    }
+
+                    a {
+                        transition: all .3s;
+                        width: 224px;
+                        color: #4D555D;
+                        font-size: 14px;
+
+                        &:hover {
+                            color: rgba(28, 152, 69, 0.8);
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .jyms-lb-container {
+        overflow: hidden;
+        height: 100%;
+
+        .jyms-container {
+            position: relative;
+            height: 100%;
+            width: 10000px;
+
+            .jyms-lb-ys {
+                display: inline-block;
+                width: 1152px;
+                position: relative;
+                margin-right: 30px;
+                margin-top: 40px;
+
+                a {
+                    position: relative;
+                    display: block;
+                    float: left;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    width: 216px;
+                    height: 248px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    border-radius: 10px;
+                    margin-right: 18px;
+                    transition: all .3s;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    img {
+                        position: absolute;
+                        border-radius: 100px;
+                        margin: 0 60px;
+                        width: 96px;
+                        top: -20px;
+                        left: 0;
+                    }
+
+                    .name {
+                        font-weight: bold;
+                        font-size: 16px;
+                        display: block;
+                        margin-top: 98px;
+                        text-align: center;
+                        color: #1c1f21;
+                        line-height: 24px;
+                    }
+
+                    .desc {
+                        display: block;
+                        color: #71777d;
+                        text-align: center;
+                        line-height: 24px;
+                        font-size: 12px;
+                        font-weight: 5;
+                    }
+
+                    .content {
+                        position: absolute;
+                        top: 155px;
+                        display: block;
+                        color: #71777d;
+                        line-height: 24px;
+                        font-size: 12px;
+                        padding: 0 36px;
+                        height: 72px;
+                        overflow: hidden;
+                    }
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 1);
+
+                        img {
+                            transition: all .3s;
+                            width: 66px;
+                            left: 14px;
+                        }
+
+                        .content {
+                            transition: all .3s;
+                            top: 60px;
+                            height: 170px;
+                            color: #000;
+                            font-weight: 400;
+                        }
+
+                        .name,
+                        .desc {
+                            transition: all .3s;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .left2,
+        .right2 {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            background-color: rgba(255, 255, 255, 0.2);
+            top: 50%;
+            left: -24px;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #FFF;
+            }
+        }
+
+        .right2 {
+            left: 1129px;
+        }
+
+        .pagination2 {
+            text-align: center;
+            margin-top: 10px;
+
+            span {
+                cursor: pointer;
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.153);
+            }
+
+            .active {
+                background-color: #FFF;
+            }
+        }
+
+    }
+
+    .index-dzt-title {
+        margin: 20px auto 48px auto;
+        width: 544px;
+        height: 100px;
+
+        .kuai {
+            width: 136px;
+            float: left;
+            text-align: center;
+            border-radius: 50%;
+
+            position: relative;
+
+            .title {
+                margin-top: 8px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+            }
+
+            .desc {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #71777d;
+            }
+
+            .quan {
+                margin: 0 auto;
+                width: 56px;
+                height: 56px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1);
+                }
+
+                span {
+                    display: block;
+                    width: 26px;
+                    height: 18px;
+                    background: url(http://imooc.com/static/img/index/champion.png) no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top: -18px;
+                    left: 55px;
+                }
+
+                .blue {
+                    background-position: center -36px;
+                }
+
+                .green {
+                    background-position: center -18px;
+                }
+
+                .yellow {
+                    background-position: center -54px;
+                }
+            }
+
+        }
+    }
+
+    .index-dzt-bottom {
+        width: 888px;
+        margin: 0 auto;
+
+        .kuai {
+            float: left;
+            width: 52px;
+            height: 52px;
+            margin: 0 28px 24px 0;
+            position: relative;
+            border: #ffffff solid 2px;
+            border-radius: 50%;
+            transition: all .3s;
+            &.two {
+                margin-left: 40px;
+            }
+            &.blue {
+                .paopao {
+                    background-color: #337ab7;
+                    span {
+                        color: #337ab7;
+                    }
+                }
+            }
+            &.yellow {
+                .paopao {
+                    background-color: #b5bb3e;
+                    span {
+                        color: #b5bb3e;
+                    }
+                }
+            }
+            &.zs {
+                .paopao {
+                    background-color: #b33db3;
+                    span {
+                        color: #b33db3;
+                    }
+                }
+            }
+            &.green {
+                .paopao {
+                    background-color: #34b311;
+                    span {
+                        color: #34b311;
+                    }
+                }
+            }
+            
+            &:hover {
+                transition: all .3s;
+                border: #337ab7 solid 2px;
+                &.yellow {
+                    border: #b5bb3e solid 2px;
+                }
+                &.green {
+                    border: #34b311 solid 2px;
+                }
+                &.zs {
+                    border: #b33db3 solid 2px;
+                }
+
+                .paopao {
+                    transition: all .3s;
+                    opacity: 1;
+                    display: block;
+                }
+            }
+
+            img {
+                box-sizing: border-box;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                border: #FFF 2px solid;
+            }
+
+            .paopao {
+                transition: all .3s;
+                display: none;
+                opacity: 0;
+                position: absolute;
+                width: 202px;
+                height: 90px;
+                padding: 12px 24px 0 24px;
+                text-align: center;
+                top: -110px;
+                left: -101px;
+                border-radius: 10px;
+                background-color: #337ab7;
+
+                .title,
+                .name,
+                .desc {
+                    color: #FFF;
+                }
+
+                .title,
+                .name,
+                .desc {
+                    font-size: 12px;
+                }
+
+                .desc {
+                    margin-top: 10px;
+                }
+
+                span {
+                    display: block;
+                    line-height: 20px;
+                    position: absolute;
+                    color: #337ab7;
+                    font-size: 40px;
+                    bottom: -9px;
+                    left: 53%;
+                }
+            }
+        }
+
+    }
+}
+
+#footer {
+    padding: 36px 0;
+    .container {
+        position: relative;
+    }
+    .linker {
+        a {
+            margin: 0 10px;
+            color: #787d82;
+            &:hover {
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+    .bq {
+        margin-top: 20px;
+        color: #787d82;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .tg {
+        position: absolute;
+            right: 0;
+            bottom: 0;
+        .tg-container {
+            .l {
+                margin-right: 32px;
+            }
+            a {
+                margin: 0 auto;
+            }
+            .gzh {
+                display: block;
+                width: 32px;
+                height: 32px;
+                background-image: url(http://imooc.com/static/img/idx-btm.png);
+                background-repeat: no-repeat;
+                background-position: -52px -221px;
+            }
+            .wb {
+                display: block;
+                width: 32px;
+                height: 32px;
+                background-image: url(http://imooc.com/static/img/idx-btm.png);
+                background-repeat: no-repeat;
+                background-position: 0px -221px;
+            
+            }
+            span {
+                font-size: 12px;
+                color: #71777d;
+            }
+        }
+    }
+}
+
+#goTop {
+    position: fixed;
+    right:0;
+    top: 40%;
+    padding: 16px;
+    background-color: #fff;
+    box-shadow: 0 0 7px 7px rgba(33, 33, 33, 0.077); 
+    a {
+        color: #71777d;
+        display: block;
+        width: 26px;
+        text-align: center;
+        line-height: 18px;
+        padding: 16px 0;
+        font-size: 10px;
+        border-bottom: #71777d15 solid 1px;
+        &:first-child {
+            padding-top: 0px;
+        }
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0px;
+        }
+        .wa {
+            display: none;
+        }
+        .hb {
+            display: block;
+            margin-left: 5px;
+            width: 18px;
+            height: 20px;
+            background: url(http://imooc.com/static/img/index/redPacket.png) no-repeat;
+            background-size: 100% 100%;
+            background-position: top center;
+        }
+        &:hover {
+
+            color: #1c1f21;
+            span.tb {
+                display: none;
+            }
+            span.wa {
+                display: block;
+            }
+        }
+    }
+}
+
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
