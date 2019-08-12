@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head class = "good morning">
+	<meta charset="utf-8" class = "good morning">
+	<title class = "moring good">This is a test.</title>
+</head>
+<body>
+	<script>
+		// var good = document.getElementsByClassName("good morning");
+		// alert(good.length);
+		var a = document.getElementsByTagName('*');
+		// alert(a.length);
+		// for (var i = 0; i < a.length; i++) {
+		// 	var b = a[i].getAttribute("class");
+		// 	if(b) alert(b);
+		// }
+		for (var i = 0; i < a.length; i++) {
+			a[i].setAttribute("class","666");		
+		}
+		var b = document.getElementsByClassName("666");
+		alert(b.length)
+	</script>
+</body>
+</html>
