@@ -1,0 +1,79 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#lb .lb{
+	position: absolute;
+    height: 400px;
+    background-color: aquamarine;
+}
+
+#left {
+	float: left;
+	width: 35px;
+	height: 50px;
+	background-color: #FFF;
+	position: relative;
+	top:100px;
+	left:0px;
+}
+
+#right {
+	float: left;
+	width: 35px;
+	height: 50px;
+	background-color: #FFF;
+	position: relative;
+	top:100px;
+	left:630px;
+}
+
+#list {
+	position: relative;
+	float: left;
+	left: 0px;
+	top: 0px;
+	width: 2800px;
+}
+
+#list li {
+	list-style: none;
+	float: left;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+#list li image {
+}
+
+#cri {
+	position: absolute;
+	float: left;
+	width: 500px;
+}
+
+#criList {
+	position: relative;
+	float: left;
+	left: 500px;
+	top: 220px;
+}
+
+#criList li {
+	list-style: none;
+	margin-left: 20px;
+	width: 15px;
+	height: 15px;
+	float: left;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+#criList li a {
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-color: rgb(244,236,240);
+}

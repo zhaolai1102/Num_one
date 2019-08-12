@@ -1,0 +1,236 @@
+body div.col-1-1 {
+  float: left;
+  width: 100%; }
+body div.col-2-1 {
+  float: left;
+  width: 50%; }
+body div.col-2-2 {
+  float: left;
+  width: 100%; }
+body div.col-3-1 {
+  float: left;
+  width: 33.3333333333%; }
+body div.col-3-2 {
+  float: left;
+  width: 66.6666666667%; }
+body div.col-3-3 {
+  float: left;
+  width: 100%; }
+body div.col-4-1 {
+  float: left;
+  width: 25%; }
+body div.col-4-2 {
+  float: left;
+  width: 50%; }
+body div.col-4-3 {
+  float: left;
+  width: 75%; }
+body div.col-4-4 {
+  float: left;
+  width: 100%; }
+body div.col-5-1 {
+  float: left;
+  width: 20%; }
+body div.col-5-2 {
+  float: left;
+  width: 40%; }
+body div.col-5-3 {
+  float: left;
+  width: 60%; }
+body div.col-5-4 {
+  float: left;
+  width: 80%; }
+body div.col-5-5 {
+  float: left;
+  width: 100%; }
+body div.col-6-1 {
+  float: left;
+  width: 16.6666666667%; }
+body div.col-6-2 {
+  float: left;
+  width: 33.3333333333%; }
+body div.col-6-3 {
+  float: left;
+  width: 50%; }
+body div.col-6-4 {
+  float: left;
+  width: 66.6666666667%; }
+body div.col-6-5 {
+  float: left;
+  width: 83.3333333333%; }
+body div.col-6-6 {
+  float: left;
+  width: 100%; }
+body div.col-7-1 {
+  float: left;
+  width: 14.2857142857%; }
+body div.col-7-2 {
+  float: left;
+  width: 28.5714285714%; }
+body div.col-7-3 {
+  float: left;
+  width: 42.8571428571%; }
+body div.col-7-4 {
+  float: left;
+  width: 57.1428571429%; }
+body div.col-7-5 {
+  float: left;
+  width: 71.4285714286%; }
+body div.col-7-6 {
+  float: left;
+  width: 85.7142857143%; }
+body div.col-7-7 {
+  float: left;
+  width: 100%; }
+body div.col-8-1 {
+  float: left;
+  width: 12.5%; }
+body div.col-8-2 {
+  float: left;
+  width: 25%; }
+body div.col-8-3 {
+  float: left;
+  width: 37.5%; }
+body div.col-8-4 {
+  float: left;
+  width: 50%; }
+body div.col-8-5 {
+  float: left;
+  width: 62.5%; }
+body div.col-8-6 {
+  float: left;
+  width: 75%; }
+body div.col-8-7 {
+  float: left;
+  width: 87.5%; }
+body div.col-8-8 {
+  float: left;
+  width: 100%; }
+body div.col-9-1 {
+  float: left;
+  width: 11.1111111111%; }
+body div.col-9-2 {
+  float: left;
+  width: 22.2222222222%; }
+body div.col-9-3 {
+  float: left;
+  width: 33.3333333333%; }
+body div.col-9-4 {
+  float: left;
+  width: 44.4444444444%; }
+body div.col-9-5 {
+  float: left;
+  width: 55.5555555556%; }
+body div.col-9-6 {
+  float: left;
+  width: 66.6666666667%; }
+body div.col-9-7 {
+  float: left;
+  width: 77.7777777778%; }
+body div.col-9-8 {
+  float: left;
+  width: 88.8888888889%; }
+body div.col-9-9 {
+  float: left;
+  width: 100%; }
+body div.col-10-1 {
+  float: left;
+  width: 10%; }
+body div.col-10-2 {
+  float: left;
+  width: 20%; }
+body div.col-10-3 {
+  float: left;
+  width: 30%; }
+body div.col-10-4 {
+  float: left;
+  width: 40%; }
+body div.col-10-5 {
+  float: left;
+  width: 50%; }
+body div.col-10-6 {
+  float: left;
+  width: 60%; }
+body div.col-10-7 {
+  float: left;
+  width: 70%; }
+body div.col-10-8 {
+  float: left;
+  width: 80%; }
+body div.col-10-9 {
+  float: left;
+  width: 90%; }
+body div.col-10-10 {
+  float: left;
+  width: 100%; }
+body div.col-11-1 {
+  float: left;
+  width: 9.0909090909%; }
+body div.col-11-2 {
+  float: left;
+  width: 18.1818181818%; }
+body div.col-11-3 {
+  float: left;
+  width: 27.2727272727%; }
+body div.col-11-4 {
+  float: left;
+  width: 36.3636363636%; }
+body div.col-11-5 {
+  float: left;
+  width: 45.4545454545%; }
+body div.col-11-6 {
+  float: left;
+  width: 54.5454545455%; }
+body div.col-11-7 {
+  float: left;
+  width: 63.6363636364%; }
+body div.col-11-8 {
+  float: left;
+  width: 72.7272727273%; }
+body div.col-11-9 {
+  float: left;
+  width: 81.8181818182%; }
+body div.col-11-10 {
+  float: left;
+  width: 90.9090909091%; }
+body div.col-11-11 {
+  float: left;
+  width: 100%; }
+body div.col-12-1 {
+  float: left;
+  width: 8.3333333333%; }
+body div.col-12-2 {
+  float: left;
+  width: 16.6666666667%; }
+body div.col-12-3 {
+  float: left;
+  width: 25%; }
+body div.col-12-4 {
+  float: left;
+  width: 33.3333333333%; }
+body div.col-12-5 {
+  float: left;
+  width: 41.6666666667%; }
+body div.col-12-6 {
+  float: left;
+  width: 50%; }
+body div.col-12-7 {
+  float: left;
+  width: 58.3333333333%; }
+body div.col-12-8 {
+  float: left;
+  width: 66.6666666667%; }
+body div.col-12-9 {
+  float: left;
+  width: 75%; }
+body div.col-12-10 {
+  float: left;
+  width: 83.3333333333%; }
+body div.col-12-11 {
+  float: left;
+  width: 91.6666666667%; }
+body div.col-12-12 {
+  float: left;
+  width: 100%; }
+
+/*# sourceMappingURL=shangge.css.map */

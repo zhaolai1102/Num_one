@@ -1,0 +1,205 @@
+*{
+	margin:0;
+	padding:0;	
+}
+
+html{
+	background: repeating-linear-gradient(135deg, white, gray 2%, white 2%);
+	position: relative;
+	border-collapse:collapse;
+}
+
+body{
+	margin:0 300px 0 300px;
+	background:gray;
+	height:2200px;
+	position: relative;
+	border-collapse:collapse;
+}
+
+header{
+	position: absolute;
+	background: url("4.jpeg");
+	background-size:cover;
+	top: 0px;
+	right: 25px;
+	width: 700px;
+	height: 150px;
+	text-align: center;
+}
+
+header h1{
+	position: absolute;
+	top: 30px;
+	right: 275px;
+	width: 200px;
+	height: 30px;
+}
+
+header h2{
+	position: absolute;
+	top: 70px;
+	right: 175px;
+	width: 400px;
+	height: 30px;
+}
+
+header h2 abbr{
+	text-decoration: none; 
+}
+
+.summary{
+	position: absolute;
+	top: 170px;
+	right: 25px;
+	width: 475px;
+	height: 75px;
+	background:white;
+	line-height:1.5;
+	padding-left: 25px;
+}
+
+.preamble{
+	position: absolute;
+	top: 270px;
+	right: 25px;
+	width: 475px;
+	height: 250px;
+	padding-left: 25px;
+	background: white;
+	line-height:1.5;
+}
+
+#zen-supporting a{
+	color:red;
+}
+
+.preamble h3{
+	font:italic bold 1.2em "Fira Sans", serif;
+}
+
+.explanation{
+	position: absolute;
+	top: 545px;
+	right: 25px;
+	width: 475px;
+	height: 300px;
+	padding-left: 25px;
+	background:white;	
+	line-height:1.5;
+}
+
+.explanation h3{
+	font:italic bold 1.2em "Fira Sans", serif;
+}
+
+.participation{
+	position: absolute;
+	top: 870px;
+	right: 25px;
+	width: 475px;
+	height: 380px;
+	padding-left: 25px;
+	background:white;
+	line-height:1.5;	
+}
+
+.participation h3{
+	font:italic bold 1.2em "Fira Sans", serif;
+}
+
+.benefits{
+	position: absolute;
+	top: 1275px;
+	right: 25px;
+	width: 475px;
+	height: 150px;
+	padding-left: 25px;
+	background:white;
+	line-height:1.5;	
+}
+
+.benefits h3{
+	font:italic bold 1.2em "Fira Sans", serif;
+}
+
+.requirements{
+	position: absolute;
+	top: 1450px;
+	right: 25px;
+	width: 475px;
+	height: 650px;
+	padding-left: 25px;
+	background:white;
+	line-height:1.5;	
+}
+
+.requirements h3{
+	font:italic bold 1.2em "Fira Sans", serif;
+}
+
+footer{
+	position: absolute;
+	top: 2125px;
+	right: 25px;
+	width: 300px;
+	padding-left: 25px;	
+}
+
+footer a{
+	border: solid red;
+	font: small-caps bold 24px/1 sans-serif;
+	color: yellow;
+}
+
+.design-selection{
+	position: absolute;
+	background: white;
+	top: 170px;
+	right: 550px;
+	width: 150px;
+	height: 400px;
+	padding-left: 25px;
+	line-height:1.5;	
+}
+
+.design-selection h3{
+	font:italic bold 1.2em "Fira Sans", serif;
+}
+
+.design-archives{
+	position: absolute;
+	background: white;
+	top: 595px;
+	right: 550px;
+	width: 150px;
+	height: 90px;
+	padding-left: 25px;
+	line-height:1.5;	
+}
+
+.design-archives h3{
+	font:italic bold 1.2em "Fira Sans", serif;
+}
+
+.zen-resources{
+	position: absolute;
+	background: white;
+	top: 710px;
+	right: 550px;
+	width: 150px;
+	height: 180px;
+	padding-left: 25px;
+	line-height:1.5;
+}
+
+.zen-resources h3{
+	font:italic bold 1.2em "Fira Sans", serif;
+}
+.sidebar a{
+	color:brown;
+}
+
+.zen-resources a{
+	color:brown;
+}

@@ -1,0 +1,130 @@
+html{
+	margin:0;
+	padding:0;
+	background: #828282;
+}
+
+body{
+	margin-left: 200px;
+	width: 950px;
+	padding:0;
+	border: dotted yellow;
+	background:yellow;
+	position: relative;
+}
+
+section{
+	width: 500px;
+	margin:0;
+	padding: 0;
+	border: dotted yellow;
+}
+
+header{
+	background: url("3.jpg");
+	background-size: cover;
+	margin:0;
+	padding: 0;
+	position:absolute;
+	height: 250px;
+	width: 945px;
+}
+
+header h1{
+	color: white;
+	font: 100 1.4em serif;
+	position:absolute;
+	left: 80px;
+	bottom: 10px;
+}
+
+header h2{
+	color:white;
+	font: 900 1.6em serif;
+	position:absolute;
+	left: 20px;
+	bottom: -20px;
+}
+
+header h2 abbr{
+	text-decoration: none; 
+}
+
+.summary{
+	margin-top: 260px;
+	margin-left: 20px;
+	color:red;
+	font: italic bold 1.3em serif;
+}
+
+.summary a{
+	color:brown;
+	font: italic bold 1.3em serif;
+}
+
+.preamble{
+	margin-left: 20px;
+	color: gray;
+}
+
+.preamble h3{
+	font: italic small-caps bold 1.4em Georgia, serif;
+	color:black;
+}
+
+#zen-supporting{
+	margin-left: 20px;
+	margin-right: 450px;
+	color: gray;
+}
+
+#zen-supporting h3{
+	font: italic small-caps bold 1.4em cursive;
+	color:black;
+}
+
+.requirements a{
+	color:brown;
+}
+
+.participation a{
+	color:brown;
+}
+
+
+footer {
+	position: absolute;
+	top: 140px;
+	right: 60px;
+	width: 260px;
+	text-align: center;
+}
+
+footer a{
+	color:white;
+}
+
+aside{
+	position: absolute;
+	background: #87CEFF;
+	top: 200px;
+	right: 3px;
+	width: 300px;
+	height: 1899px;
+}
+
+.wrapper{
+	margin-left: 20px;
+	line-height: 2;
+}
+
+.wrapper h3{
+	color:white;
+}
+li{
+	color:white;
+}
+
+.design-selection li :nth-of-type(2){
+	color:white;
+}
