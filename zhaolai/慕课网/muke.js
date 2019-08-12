@@ -1,11 +1,5 @@
 $(document).ready(function(){
   // 搜索框
-
-
-
-
-
-  
   $("#show").hover(function(){
     $("#show").css("background","rgba(240, 20, 20, 0.4)");
     $("#show i").css("color","#F01414");
@@ -400,10 +394,8 @@ $(document).ready(function(){
     $(this).find("h2").show();
   });
   //轮播2
+  var timeout;
   var lunbonum2 = 1;
-  var lunboList2 = ["",""];
-
-
   function lunbo2(){
     let hide = $(".lunbo2-1").eq(lunbonum2);
     let show = $(".lunbo2-1").eq(1-lunbonum2);
@@ -419,7 +411,8 @@ $(document).ready(function(){
     $(".lunbo2-1").animate({
       left:"-=1170px"
     },300);
-    setTimeout(function(){
+    clearTimeout(timeout);
+    timeout = setTimeout(function(){
       show.css("display","none");
     },300);
     hidep.css("background","#FFF");
@@ -475,7 +468,7 @@ $(document).ready(function(){
     lunbo3();
   });
   $(".r-1").click(function(){
-    lunbo3();
+    lunbo2();
   });
   //底部按钮
   $(".l-2").click(function(){
